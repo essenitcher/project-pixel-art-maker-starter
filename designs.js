@@ -31,15 +31,8 @@ function makeGrid() {
 
 function paintSquare(){
 	var color = $("#colorPicker").val();
-	//if it has a color already, clicking it will remove it
-	var style  = $(this).attr("style");
-	if(style != null){
-		//remove the attribute style
-		$(this).removeAttr("style");
-	}else{
-		$(this).css("background-color", color);
-	}
-	
+	$(this).css("background-color", color);
+
 }
 
 
